@@ -102,6 +102,27 @@
             <artifactId>logback-classic</artifactId>
             <version>1.1.8</version>
         </dependency>
+
+        <!-- 对JSON和XML格式的支持 -->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml -->
+        <!-- <dependency>
+           <groupId>com.fasterxml.jackson.dataformat</groupId>
+           <artifactId>jackson-dataformat-xml</artifactId>
+           <version>2.8.6</version>
+       </dependency>-->
+
+
+        <!-- 对JSON格式支持,上面那个还包含了XML,但是大部分情况下,我们都是用json格式就行了 -->
+       <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.8.6</version>
+        </dependency>
+
+
+
+
     </dependencies>
 
     <build>
