@@ -12,12 +12,12 @@ import org.springframework.web.servlet.view.JstlView;
  * 配置Spring,用于映射路径和实际页面的位置
  */
 @Configuration
-@ComponentScan("com.durendong.springmvc")
 @EnableWebMvc
+@ComponentScan("com.durendong.springmvc")
 public class MyMvcConfig {
 
     @Bean
-    public InternalResourceViewResolver viewsReslover() {
+    public InternalResourceViewResolver viewsResolver() {
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
         viewResolver.setPrefix("/WEB-INF/classes/views/");
         viewResolver.setSuffix(".jsp");
